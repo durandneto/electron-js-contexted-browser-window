@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Window 2</title>
+  </head>
+  <body>
+    <h1>Window 2</h1>
+    <button type="button" id="open" class="send-message">Open here 2</button>
+    <script>
+         var button = document.getElementById('open');
+        
+          button.addEventListener('click', function() {
+              window.open('./index2.html');
+          });
+
+          // alloc a big chunk of memory to see memory leak in window.open
+          var bigMemory = new Array(10000000);
+          for(var i = 0; i < 10000000 -1; i++) {
+              bigMemory[i] = i;
+          }
+        
+    </script>
+
+    <div>
+      <script> document.write(process.pid) </script>
+    </div>
+  </body>
+</html>

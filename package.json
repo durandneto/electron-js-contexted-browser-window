@@ -1,0 +1,15 @@
+{
+  "name": "inter-renderer-communication",
+  "version": "1.0.0",
+  "description": " Open a browserwindow with a context",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Durand Neto",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "electron-prebuilt": "^1.4.13"
+  }
+}
